@@ -28,4 +28,20 @@ public class ListNode {
         }
         return  head;
     }
+    static public ListNode createListRing(int k){
+        if(k<1){
+            return null;
+        }
+        Random random=new Random();
+        ListNode head=new ListNode(1);
+        ListNode node=head;
+        for(int i=2;i<=k;i++){
+            node.next=new ListNode(i);
+            node=node.next;
+            if(i==k){
+                node.next=head;
+            }
+        }
+        return  head;
+    }
 }
