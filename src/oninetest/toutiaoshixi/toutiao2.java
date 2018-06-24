@@ -1,4 +1,4 @@
-package oninetest;
+package oninetest.toutiaoshixi;
 
 import java.util.Scanner;
 

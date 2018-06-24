@@ -1,4 +1,4 @@
-package oninetest;
+package oninetest.baidushixi;
 
 import java.util.Arrays;
 import java.util.Scanner;

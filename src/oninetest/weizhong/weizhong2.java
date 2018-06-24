@@ -1,4 +1,4 @@
-package oninetest;
+package oninetest.weizhong;
 
 import java.util.Scanner;
 
