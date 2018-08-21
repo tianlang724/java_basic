@@ -44,4 +44,34 @@ public class ListNode {
         }
         return  head;
     }
+
+    static public ListNode createListParlindrom(int k){
+        if(k<1){
+            return null;
+        }
+        int m=k/2;
+        ListNode head=null;
+        ListNode pre=null;
+        for(int i=1;i<=m;i++){
+            ListNode node=new ListNode(i);
+            if(head==null){
+                head=node;
+                pre=node;
+            }else{
+                pre.next=node;
+                pre=node;
+            }
+        }
+        if(k%2==1){
+            ListNode node=new ListNode(m+1);
+            pre.next=node;
+            pre=node;
+        }
+        for(int i=m;i>0;i--){
+            ListNode node=new ListNode(i);
+            pre.next=node;
+            pre=node;
+        }
+        return  head;
+    }
 }

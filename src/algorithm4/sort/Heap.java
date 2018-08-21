@@ -41,13 +41,10 @@ public class Heap {
     }
     public static void main(String[] arg){
         int N=10;
-        Double[] a=new Double[N];
-        for(int j=0;j<N;j++){
-            a[j]= StdRandom.uniform();
-        }
-        Heap.sort(a);
+        Integer[] t={1,8,6,2,5,4,7,3};
+        Heap.sort(t);
 //        String[] a = StdIn.readAllStrings();
 //        Selection.showSort(a);
-        show(a);
+        show(t);
     }
 }
